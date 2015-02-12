@@ -83,6 +83,18 @@
                 start: showCell
             });
         });
+        $('.arrow-up').on('click', function () {
+            var section = $(this).closest('.section').prev().attr('id');
+
+            //侧边栏点击锚点平滑滚动 
+            $("body").animate({
+                scrollTop: _cfg['sectionOffsets'][section].top + 'px'
+            }, {
+                duration: 500,
+                easing: "swing",
+                start: showCell
+            });
+        });
     }
     
     function showCell() {

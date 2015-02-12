@@ -15,6 +15,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -25px;
+    z-index: 150;
 
     a {
         opacity: 0.7;
@@ -29,6 +30,11 @@ body {
 }
 .arrow-up {
     top: 5px;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);     /* IE 9 */
+    -moz-transform:rotate(180deg);    /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);  /* Opera */
 }
 
 .arrow-down {
@@ -70,7 +76,7 @@ body {
 }
 
 .section2 {
-    background: url(../img/bg2.png) center no-repeat;
+    background: url(../img/bg2.jpg) center no-repeat;
     background-size: cover;
     padding: 20px 0 ;
 }
